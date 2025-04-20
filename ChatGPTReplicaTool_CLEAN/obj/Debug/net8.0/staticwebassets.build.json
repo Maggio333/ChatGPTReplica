@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "rqkRYuHQFU8p+KlDMlnXHpOmNKsJxpBis3iZDGZPBf8=",
+  "Source": "ChatGPTReplicaTool",
+  "BasePath": "_content/ChatGPTReplicaTool",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
