@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http.Json;
 using Microsoft.Extensions.Hosting;
@@ -20,11 +19,15 @@ app.MapPost("/", async (HttpContext context) =>
 
     if (body.Contains("podróżami"))
     {
-        await context.Response.WriteAsync("{"answer": "Zespół badawczy składa się z dr Jana Nowaka i mgr Anny Kowalskiej. Badania były prowadzone na Uniwersytecie Warszawskim, sponsor: Ministerstwo Nauki."}");
+        await context.Response.WriteAsync("""
+        {"answer": "Zespół badawczy składa się z dr Jana Nowaka i mgr Anny Kowalskiej. Badania były prowadzone na Uniwersytecie Warszawskim, sponsor: Ministerstwo Nauki."}
+        """);
     }
     else
     {
-        await context.Response.WriteAsync("{"answer": "Brak danych."}");
+        await context.Response.WriteAsync("""
+        {"answer": "Brak danych."}
+        """);
     }
 });
 
